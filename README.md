@@ -85,16 +85,16 @@ Replace `USER` with the username that you would like to become an Administrator.
 Download ygopro, they're in the YGOPRO/pics/ folder
 
 ## Updating cards database
-Download ygopro
-export YGOPRO/cards.cdb as a .sql using sqlite3 .output & .dump functions
-import into mysql
-edit exportygoprodb.php
-	edit these lines to connect to your mysql:
-		$servername = "localhost";
-		$username = "root";
-		$password = "";
-run exportygoprodb.php on the webserver connected to the mysql database
-replace db.js with exportygoprodb.php output
+1. Download ygopro
+2. export YGOPRO/cards.cdb as a .sql using sqlite3 .output & .dump functions
+3. import into mysql
+4. edit exportygoprodb.php
+   1. edit these lines to connect to your mysql:
+      1. $servername = "localhost";
+      2. $username = "root";
+      3. $password = "";
+5. run exportygoprodb.php on the webserver connected to the mysql database
+6. replace db.js with exportygoprodb.php output
 
 
 ## License
